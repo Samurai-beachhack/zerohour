@@ -1,73 +1,78 @@
-# RiskBoard
+# ZeroHour
 
-## Track
-Cybersecurity & Threat Intelligence
+ZeroHour is a terminal-native CLI that identifies **what breaks the business first** in a codebase.
 
-## Problem Statement
-Modern security teams face extreme alert overload. Thousands of vulnerabilities,
-alerts, and threat indicators are generated daily, but most lack the necessary
-context to determine real business impact.
-
-Security alerts are typically evaluated in isolation, without considering:
-- The business criticality of affected assets
-- Real-world exploitability of threats
-- Operational and organizational impact
-
-This leads to alert fatigue, inefficient resource usage, and delayed response to
-critical risks.
+It is **not a SAST replacement**.  
+It is the **decision layer before SAST**.
 
 ---
 
-## Solution Overview
-RiskBoard is a **context-aware threat prioritization platform** that helps security
-teams focus on what truly matters.
+## Problem
 
-Instead of treating all alerts equally, RiskBoard correlates security threats with
-organizational context and business importance to produce a ranked list of
-**“Top Risks Right Now.”**
+Modern SAST tools are powerful, but they:
+- Produce hundreds of findings
+- Lack business context
+- Do not help teams decide what to fix *today*
 
-The goal is simple:  
-**Show security teams exactly what to fix first and why.**
+Teams know *what is wrong*, but not *what hurts first*.
 
 ---
 
-## Key Features
-- Asset inventory with business criticality scoring
-- Threat intake with severity and exploitability attributes
-- Deterministic risk scoring engine
-- Real-time ranked risk dashboard
-- Actionable remediation recommendations
+## What ZeroHour Does
+
+ZeroHour analyzes a codebase and outputs:
+
+- **Only the top 3 issues**
+- Ranked by **failure impact**
+- Translated into **business consequences**
+
+It answers:
+> “What breaks first if this fails?”
 
 ---
 
-## How It Works
-1. Assets are registered with defined business importance
-2. Security threats are ingested or simulated with severity data
-3. Threats are correlated with affected assets
-4. A contextual risk score is calculated
-5. Risks are dynamically ranked based on business impact
-6. Clear remediation guidance is provided for high-priority risks
+## Core Principles
+
+- **Failure-first, not vulnerability-first**
+- **Forced prioritization (Top 3 only)**
+- **Business context built-in**
+- **Explainable results**
+  - Why this matters
+  - How it fails
+  - How to fix it
+- **No ML guessing**
+  - Deterministic and auditable
+- **Terminal-native**
+  - No dashboards
+  - No setup
 
 ---
 
-## Tech Stack
-- Frontend: React
-- Backend: Node.js, Express
-- Database: MongoDB
-- Visualization: Dashboard charts and tables
+## How It Fits With SAST
+
+SAST tools are important. ZeroHour does not replace them.
+
+**SAST**
+- Finds what is wrong
+
+**ZeroHour**
+- Decides what matters first
+
+ZeroHour runs **before** SAST triage to focus effort where impact is highest.
 
 ---
 
-## Impact
-RiskBoard enables organizations to:
-- Reduce alert fatigue
-- Prioritize threats based on real business risk
-- Improve incident response decision-making
-- Align security actions with operational impact
+## Usage
 
----
+```bash
+failfast analyze
+
 
 ## Team
 Built during the BeachHack Hackathon.
 
+- **Raakesh** (@Rakesh173)
 - **Adhil Ameen** (@aadhi13)
+- **Mathew** (@)
+- **Sangeeth** (@)
+
