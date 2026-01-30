@@ -101,6 +101,43 @@ git switch rescue-branch
 Your changes are now safe in `rescue-branch`.
 Continue work and push normally.
 
+### Recover commits from a deleted / wrong branch (cherry-pick)
+
+If you committed on a branch that was already merged or deleted:
+
+1. Create a new branch from `main`
+
+```bash
+git switch main
+git pull origin main
+git switch -c new-branch-name
+```
+
+2. Copy the commit into the new branch
+
+```bash
+git cherry-pick <commit-hash>
+```
+
+3. Push and open PR
+
+```bash
+git push origin new-branch-name
+```
+
+Notes:
+
+* Cherry-pick copies a commit into the current branch
+* The new commit has a different hash
+* Use this only for small, isolated commits
+
+---
+
+## One hard rule to add (optional but recommended)
+
+```md
+> One task = one branch = one PR = delete branch = never reuse
+```
 ---
 
 ## View Branches
