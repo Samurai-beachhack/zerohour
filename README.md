@@ -70,3 +70,4 @@ RiskBoard enables organizations to:
 ## Team
 Built during the BeachHack Hackathon.
 
+- **Adhil Ameen** (@aadhi13)
