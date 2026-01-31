@@ -27,11 +27,19 @@ Teams waste time fixing low-impact issues.
 
 ## How it works (high level)
 
-1. Statically scans a codebase
-2. Extracts structural failure signals
-3. Estimates failure impact
-4. Forces prioritization
-5. Outputs only the **top 10 issues**
+1. Runs Semgrep to extract structured security and code signals
+2. Normalizes findings into a unified failure dataset
+3. Uses Grok to reason about impact, priority, and remediation
+4. Forces prioritization (Top 10 by default)
+5. Outputs explanations and optional fixes
+
+---
+
+## What powers ZeroHour
+
+- Semgrep
+- Grok
+- ZeroHour logic
 
 ---
 
