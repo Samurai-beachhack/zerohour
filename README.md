@@ -25,7 +25,7 @@ They do **not know what to fix first**
 
 ZeroHour analyzes a codebase and outputs:
 
-- **Only the top 5 issues**
+- **Only the top 10 issues**
 - Ranked by **failure impact**
 - Explained in **business consequences**
 
@@ -40,7 +40,7 @@ It focuses on:
 ## Core Principles
 
 - Failure-first, not vulnerability-first
-- Forced prioritization (Top 5 only)
+- Forced prioritization (Top 10 only)
 - Business impact over technical noise
 - Deterministic and auditable logic
 - Terminal-only workflow
@@ -87,16 +87,50 @@ zerohour analyze
 ---
 
 ## Documentation
-- 📄 **Git Workflow:** [GIT_WORKFLOW.md](./GIT_WORKFLOW.md "Git Workflow markdown")
-- 📄 **Execution Plan:** [EXECUTION_PLAN.md](./EXECUTION_PLAN.md "Execution Plan markdown")
-- 📄 **How it works (detail):** [docs/HOW_IT_WORKS.md](./docs/HOW_IT_WORKS.md "Detailed Documentation")
+
+Start here:
+- 📘 **Overview** — what ZeroHour is and why it exists  
+  [docs/overview.md](./docs/overview.md "Project overview and core idea")
+
+Getting started:
+- ⚙️ **Installation** — setup and build instructions  
+  [docs/installation.md](./docs/installation.md "Installation guide")
+- ▶️ **Usage** — how to run the CLI and interpret output  
+  [docs/usage.md](./docs/usage.md "CLI usage guide")
+- ❓ **FAQ** — common questions and clarifications  
+  [docs/faq.md](./docs/faq.md "Frequently asked questions")
+
+How it works:
+- 🧱 **Architecture** — system structure and data flow  
+  [docs/architecture.md](./docs/architecture.md "System architecture")
+- 🧠 **Analysis Logic** — how failure impact is determined  
+  [docs/analysis_logic.md](./docs/analysis_logic.md "Failure analysis logic")
+
+Reference:
+- 📖 **Glossary** — project-specific terminology  
+  [docs/glossary.md](./docs/glossary.md "Terminology reference")
+- ⚠️ **Limitations** — explicit and intentional constraints  
+  [docs/limitations.md](./docs/limitations.md "Known limitations")
+
+Project & contribution:
+- 🗺️ **Roadmap** — current scope and next steps  
+  [docs/roadmap.md](./docs/roadmap.md "Project roadmap")
+- 🧭 **Execution Plan** — development phases and priorities  
+  [docs/execution_plan.md](./docs/execution_plan.md "Execution plan")
+- 🔀 **Git Workflow** — contribution process and rules  
+  [docs/git_workflow.md](./docs/git_workflow.md "Git workflow")
+- 🧑‍💻 **Contributing** — how to contribute  
+  [docs/contributing.md](./docs/contributing.md "Contribution guidelines")
+
+📂 Full documentation index:  
+[docs/index.md](./docs/index.md "Complete documentation index")
 
 ---
 
 ## Contributing
 
 Before making any changes, read the Git workflow:  
-[GIT_WORKFLOW.md](./GIT_WORKFLOW.md "Detailed Git Workflow docs")
+[git_workflow.md](./git_workflow.md "Detailed Git Workflow docs")
 
 ---
 

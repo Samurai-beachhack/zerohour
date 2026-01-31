@@ -6,7 +6,7 @@ Ship a **working CLI** that:
 
 1. Analyzes a codebase
 2. Finds **failure-prone areas**
-3. Outputs **Top 3 business-impact failures**
+3. Outputs **Top 10 business-impact failures**
 4. Explains **why it matters + how to fix**
 
 If this works end-to-end, the project is useful even without prizes.
@@ -82,13 +82,13 @@ Ranked failure surfaces by impact
 
 ---
 
-### Core Feature 3: Top-3 Output
+### Core Feature 3: Top-10 Output
 
 **Forced prioritization**
 
 Final CLI output:
 
-- Exactly **3 issues**
+- Exactly **10 issues**
 - Each includes:
   - What fails
   - Why it matters (business)
@@ -152,7 +152,7 @@ Why ZeroHour stands out:
 
 - Everyone has scanners
 - Nobody has **decision clarity**
-- Top-3 constraint is memorable
+- Top-10 constraint is memorable
 - Terminal-native builds trust
 
 ---
@@ -162,7 +162,7 @@ Why ZeroHour stands out:
 Before submission:
 
 - `failfast analyze ./example-app`
-- [X] Produces **3 ranked issues**
+- [X] Produces **10 ranked issues**
 - [X] Output is readable
 - [X] Works offline
 
