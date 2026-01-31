@@ -12,6 +12,9 @@ It is the **decision layer before SAST**.
 🌐 **ZeroHour website:**  
 https://samurai-beachhack.github.io/zerohour
 
+🎥 **Demo video:**  
+files/demo-video.mp4
+
 ---
 
 ## What Problem It Solves
